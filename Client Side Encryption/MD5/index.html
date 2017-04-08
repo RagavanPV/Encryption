@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Encryption</title>
+    <script src="md5.js"></script>
+</head>
+
+<body>
+    <input id="text">
+    <button id="hash-it" onclick="hash()">MD-5</button>
+    <div id="result"></div>
+    <script type="text/javascript">
+    function hash() {
+        var button = document.getElementById('hash-it'),
+            textbox = document.getElementById('text'),
+            result = document.getElementById('result');
+
+        result.innerHTML = md5(textbox.value);
+    }
+    </script>
+</body>
+
+</html>
